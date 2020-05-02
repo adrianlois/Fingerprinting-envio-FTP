@@ -4,6 +4,6 @@ Escenario de post-explotación con Metasploit en la fase de fingerprinting para 
 
 **SysInfo.ps1**: Función para recolectar información de la máquina remota y enviarla vía FTP.
 
-**IEX-WebRequest-WebClient.txt**: Ejemplos de Invoke-Expression en Invoke-WebRequest y WebClient.
+**IEX-WebRequest-WebClient.txt**: Ejemplos de uso Invoke-Expression en Invoke-WebRequest y WebClient.
 
 ▶ **Video demo (PoC)**: https://youtu.be/JY33NkpAaeI
