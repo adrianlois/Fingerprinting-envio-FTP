@@ -36,7 +36,6 @@ function SysInfo {
 $filename = "SysInfo-$env:computername.txt"
 $LocalPath = $LocalPath+=$filename
 
-# Fecha y hora
 Get-Date -Format G > $LocalPath
 
 Write-Output "`n[+] Info del sistema:" >> $LocalPath
